@@ -4,23 +4,27 @@
   <br><br><br>
   <div class="container">
     <div class="container">
-      <h1 class="display-4">
-      <%= @friend.first_name %>
-      <%= @friend.last_name %>
-      </h1>
-      <p class="lead">
-        <%= @friend.email %>   |
-        <%= @friend.phone %>   |
-        <%= @friend.twitter %>
-      </p>
-      <br>
-      <div>
-        <%= link_to "Edit", edit_friend_path(@friend), class:"btn btn-secondary" %>
-        <%= link_to "Back to friends", friends_path, class:"btn btn-secondary" %>
-        <br><br>
-        <%= button_to "Destroy", @friend, method: :delete, class:"btn btn-outline-dark" %>
+      <div class="container">
+        <div class="container">
+          <h1 class="display-4">
+          <%= @friend.first_name %>
+          <%= @friend.last_name %>
+          </h1>
+          <p class="lead">
+            <%= @friend.email %>   |
+            <%= @friend.phone %>   |
+            <%= @friend.twitter %>
+          </p>
+          <br>
+          <div>
+            <%= link_to "Edit", edit_friend_path(@friend), class:"btn btn-secondary" %>
+            <%= link_to "Back to friends", friends_path, class:"btn btn-secondary" %>
+            <br><br>
+            <%= button_to "Destroy", @friend, method: :delete, class:"btn btn-outline-dark" %>
+          </div>
+          <h1></h1>
+        </div>
       </div>
-      <h1></h1>
     </div>
   </div>
   <br><br>
